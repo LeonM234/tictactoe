@@ -1,54 +1,79 @@
+#game-title {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  position: relative;
+}
+
 td {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
   margin: 0;
   padding: 0;
 }
 
 #r1c1 {
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 #r1c2 {
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
 }
 
 #r1c3 {
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 #r2c1 {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 #r2c2 {
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 #r2c3 {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 #r3c1 {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
 }
 
 #r3c2 {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 #r3c3 {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#game-start {
+  margin-left: 580px;
+  margin-top: 20px
+  position: absolute;
+}
+
+.x {
+  font-weight: bold;
+  text-align: center;
+}
+
+.o {
+  font-weight: bold;
+  text-align: center;
 }
