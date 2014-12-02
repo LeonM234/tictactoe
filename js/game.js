@@ -1,18 +1,17 @@
-;var game = (function(){
+;var game = (function(JQ){
   'use strict';
-
-  // create board in JS??
   
-  // board representation
+  // store variables
+  var turnCounter = 0;
+
   var board = [[0, 0, 0]
                [0, 0, 0]
                [0, 0, 0]];
 
-  // Add player1 via prompt for Firebase
   var player1 = prompt("Player 1, what is your name?");
 
-  // Add player 2 via prompt for Firebase
-  // var turnCounter = 0;
+  var player2 = prompt("Player 2, what is your name?");
+
   // ----- UPDATE BOARD ARRAY -----
   if ($(this).hasClass("x")){ 
     board[boardY].splice(boardX, 1, 1);
@@ -20,9 +19,30 @@
     board[boardY].splice(boardX, 1, 2);
   }
 
-  // Check for 3 in a row
-    // if board[x][y] == 2 && board[x+1][y] == 2 etc
-    // game over, player 1 or 2 wins! 
-  
+ return {
+    
+    addXO: function(){
+      $('td').on('click', function(){
+      if (turnCounter % 2 === 0){
+        $(this).text("X").addClass("x");
+      } else {
+        $(this).text("O").addClass("o");
+      }
+      return turnCounter++;
+    });
+  }
+           
+ // Check for horizontal 3 in a row
+    // X or O
 
-}())
+  // Check for vertical 3 in a row
+    // X or O
+
+  // Check for diagonal 3 in a row
+    // X or O
+
+  // Check for OTHER diagonal 3 in a row
+    // X or O
+ }
+
+}(jQuery));
