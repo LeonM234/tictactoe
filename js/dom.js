@@ -1,6 +1,5 @@
-;(function(turnCounter){
+;var dom = (function(turnCounter){
   'use strict';
-
 
   var turnCounter = 0;
   // click to append X or O depending on P1 or P2
@@ -10,7 +9,7 @@
     } else {
       $(this).text("O").addClass("o");
     }
-   turnCounter++;
+    return turnCounter++;
   });
 
 }())

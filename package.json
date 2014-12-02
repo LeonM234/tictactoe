@@ -1,0 +1,19 @@
+{
+  "name": "Tic-Tac-Toe",
+  "version": "1.0.0",
+  "description": "Game of Tic-Tac-Toe",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeonM234/tictactoe.git"
+  },
+  "author": "Leon Peck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeonM234/tictactoe/issues"
+  },
+  "homepage": "https://github.com/LeonM234/tictactoe"
+}
