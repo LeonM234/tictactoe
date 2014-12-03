@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  fire.setFbVariables(game.board/*, game.turnCounter*/);
+
   $('td').on('click', function(){
     if ($(this).hasClass('occupied') === true){
       alert("Can't click here!");
