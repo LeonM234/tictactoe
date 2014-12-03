@@ -2,16 +2,14 @@ var game = (function(jQ){
   'use strict';
   
   var turnCounter = 0;
-  // var player1 = prompt("Player 1, what is your name?");
-  // var player2 = prompt("Player 2, what is your name?");
-
+  // var players
 
 // ----- FUNCTIONS TO RETURN TO MAIN.JS -----
  return {
-    // check for player turn
-
+   
     board: [["", "", ""],["", "", ""],["", "", ""]],
 
+    // increment turn counter
     playerTurn: function(){
       turnCounter++;
     },
@@ -26,11 +24,10 @@ var game = (function(jQ){
     },
  
     // push to fb initial board state
-    //fb.push(board);
     updateBoardState: function(board, td){
-      var vertical = Math.floor($(td).index()/3);
-      console.log(vertical);
+      var vertical = Math.floor($(td).parent().index());
       var horizontal = $(td).index();
+      console.log(vertical);      
       if (turnCounter % 2 === 0){
         var x = $(td).text("X");
         board[vertical][horizontal] = "X";
@@ -39,6 +36,8 @@ var game = (function(jQ){
         board[vertical][horizontal] = "O";
       }
     },
+
+    //fb (board) (put it up);
 
     // Check for horizontal win - 3 in a row
     checkHorizontal: function(board) {
